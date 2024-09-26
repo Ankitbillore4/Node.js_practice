@@ -45,3 +45,23 @@ const fs = require('fs');                                //code script.js(vs cod
 // })
 // 
 // 
+
+//for delete a directory 
+// fs.rmdir("./copy",(err)=>{
+    // if(err) console.log(err);
+    // else console.log("Directory Deleted");
+// })
+
+
+//for create a directory 
+// fs.mkdir("./new folder",(err)=>{
+    // if(err) console.log(err);
+    // else console.log("Directory Created");
+// })
+
+
+//for read a directory 
+// fs.readdir("./new folder",(err,data)=>{
+    // if(err) console.log(err);
+    // else console.log(data); 
+// })
