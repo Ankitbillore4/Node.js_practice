@@ -38,9 +38,10 @@ const fs = require('fs');                                //code script.js(vs cod
 // 
 
 
-// for delete a file 
-fs.unlink("hello.txt",(err)=>{
-    if(err) console.log(err);
-    else console.log("File Deleted");
-})
-
+//for delete a file 
+// fs.unlink("hello.txt",(err)=>{
+    // if(err) console.log(err);
+    // else console.log("File Deleted");
+// })
+// 
+// 
