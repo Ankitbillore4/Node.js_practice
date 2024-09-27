@@ -67,9 +67,23 @@ const fs = require('fs');                                //code script.js(vs cod
 // })
 
 
+// fs.unlink("hello.txt",(err)=>{
+    // if(err) console.log(err);
+    // else console.log("File Deleted");
+// })
+// 
+// 
+// fs.unlink("./new folder/index.html",(err)=>{
+    // if(err) console.log(err);
+    // else console.log("File Deleted");
+// })
 
+// fs.writeFile("./new folder/style.css","heloo Gyus",(err)=>{
+    // if(err) console.log(err);
+    // else console.log("File Created");
+// })
 
-fs.unlink("hello.txt",(err)=>{
+fs.unlink("./new folder/style.css",(err)=>{
     if(err) console.log(err);
     else console.log("File Deleted");
-})
+})  
