@@ -134,3 +134,14 @@
 // 
 
 
+
+const http= require("http");
+
+const server =  http.createServer(function(req,res){
+    res.end("hello Server wasd Created");
+})
+
+server.listen(3000,function(err){
+    if (err) console.log(err);
+    else console.log("Server Was Running On Port No. 3000");
+})
