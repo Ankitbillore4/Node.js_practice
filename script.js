@@ -119,7 +119,7 @@
 //..................http start........................//
 
 // const http = require('http');
-// server create
+// server creating
 // const server = http.createServer((req,res)=>{
     // res.end("Hello Ankit Billore");
 // })
@@ -134,18 +134,18 @@
 // 
 
 const http= require("http");
-
+// check url Based Server...
 const server = http.createServer(function(req,res){
-    if(req.url== "/"){
+    if(req.url== "/" || req.url=="/Home"){
         res.end("hello server was created :");
     } else if (req.url=="/About"){
         res.end("Hello about Page Was Open :")
     } else if (req.url=="/Contact"){
         res.end("Hello Contact Page Was open :")
     } else if(req.url=="/Course"){
-        res.end("hello Course Page Was Open")
+        res.end("hello Course Page Was Open :")
     }
-    else{
+      else{
         res.end("404 Page Not Found ....")
     }
 })
