@@ -1,6 +1,7 @@
 
-const fs = require('fs');                                //code script.js(vs code me lejaygi)
+//..................Fs start........................//
 
+// const fs = require('fs');                                //code script.js(vs code me lejaygi)
 
 // // for creating a file                                   
 
@@ -82,8 +83,53 @@ const fs = require('fs');                                //code script.js(vs cod
     // if(err) console.log(err);
     // else console.log("File Created");
 // })
+// 
+// fs.unlink("./new folder/style.css",(err)=>{
+    // if(err) console.log(err);
+    // else console.log("File Deleted");
+// })  
+// 
 
-fs.unlink("./new folder/style.css",(err)=>{
-    if(err) console.log(err);
-    else console.log("File Deleted");
-})  
+
+//.................Fs end........................//
+
+
+//..................Os start........................//
+
+// const os = require('os');
+//EOL = for end of line
+// console.log(os.EOL);
+//for cpu info
+// console.log(os.cpus());
+//for os version
+// console.log(os.version());
+//for available parallelism
+// console.log(os.availableParallelism());
+//for user info
+// console.log(os.userInfo());
+//for os type
+// console.log(os.type());
+//for os architecture
+// console.log(os.arch());
+//for os uptime
+// console.log(os.uptime());
+
+//..................Os end........................//
+
+//..................http start........................//
+
+// const http = require('http');
+// server create
+// const server = http.createServer((req,res)=>{
+    // res.end("Hello Ankit Billore");
+// })
+// 
+// server.listen(3000,(err)=>{
+    // if(err){
+        // console.log(err);
+    // }else{
+        // console.log("Server is running on port 3000");
+    // }
+// })
+// 
+
