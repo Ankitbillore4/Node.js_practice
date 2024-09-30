@@ -133,15 +133,25 @@
 // })
 // 
 
+const http = require("http");
 
+const server = http.createServer((req, res) => {
+  if (req.url == "/") {
+    res.end("Hello, Home Page was opened");
+  } else if (req.url == "/Contact") {
+    res.end("Hello, Contact Page was opened");
+  } else if (req.url == "/Course") {
+    res.end("Hello, Course Page was opened");
+  } else {
+    res.end("404 Page Not Found");
+  }
+});
 
-const http= require("http");
-
-const server =  http.createServer(function(req,res){
-    res.end("hello Server wasd Created");
-})
-
-server.listen(3000,function(err){
-    if (err) console.log(err);
-    else console.log("Server Was Running On Port No. 3000");
-})
+// Starting the server and handling errors
+server.listen(3000, (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("Server is running on port 3000");
+  }
+});
