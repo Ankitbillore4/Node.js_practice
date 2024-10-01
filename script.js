@@ -166,3 +166,6 @@ const { log } = require("console")
 //  const cat = require("cat-me")
 //  console.log(cat())
 
+ const oneLinerJoke =  require("one-liner-joke");
+
+  console.log(oneLinerJoke.getRandomJoke());
