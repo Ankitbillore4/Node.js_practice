@@ -1,6 +1,9 @@
 
 //..................Fs start........................//
 
+const { default: chalk } = require("chalk");
+const { log } = require("console")
+
 // const fs = require('fs');                                //code script.js(vs code me lejaygi)
 
 // // for creating a file                                   
@@ -159,6 +162,7 @@
 
  //npm :.........
  // requiring cat-me pakage from npm for random cat..... 
- 
+
 //  const cat = require("cat-me")
 //  console.log(cat());
+
