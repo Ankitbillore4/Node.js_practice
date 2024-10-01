@@ -164,5 +164,5 @@ const { log } = require("console")
  // requiring cat-me pakage from npm for random cat..... 
 
 //  const cat = require("cat-me")
-//  console.log(cat());
+//  console.log(cat())
 
