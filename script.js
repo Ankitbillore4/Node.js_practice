@@ -149,8 +149,8 @@ const server = http.createServer(function(req,res){
         res.end("404 Page Not Found ....")
     }
 })
-server.listen(3000,function(err){
-    if (err) console.log(err);
-    else console.log("Creating Server....");
-})
+// server.listen(3000,function(err){
+    // if (err) console.log(err);
+    // else console.log("Creating Server....");
+// })
  // Server Creating Ended......
