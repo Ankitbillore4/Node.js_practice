@@ -2,7 +2,7 @@
   "name": "n20",
   "version": "1.0.0",
   "description": "��#\u0000 \u0000N\u0000o\u0000d\u0000e\u0000.\u0000j\u0000s\u0000_\u0000p\u0000r\u0000a\u0000c\u0000t\u0000i\u0000c\u0000e\u0000\r\u0000 \u0000",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,8 @@
   "dependencies": {
     "cat-me": "^1.0.3",
     "chalk": "^5.3.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
     "give-me-a-joke": "^0.5.1",
     "one-liner-joke": "^1.2.2"
   }
