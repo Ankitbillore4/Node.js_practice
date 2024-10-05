@@ -169,3 +169,23 @@
 //  const oneLinerJoke =  require("one-liner-joke");
 // 
 //   console.log(oneLinerJoke.getRandomJoke());
+
+
+const express = require("express")
+const app = express();
+
+app.set("view engine","ejs");
+
+app.get("/", function(req,res){
+    res.render("index");
+})
+
+app.get("/About", function(req,res){
+    res.render("About");
+})
+
+app.get("/Courses",function(erq,res){
+    res.render("Courses")
+})
+
+app.listen(3000);
