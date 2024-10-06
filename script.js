@@ -171,21 +171,21 @@
 //   console.log(oneLinerJoke.getRandomJoke());
 
 // Express : nodemon using :
-// const express = require("express")
-// const app = express();
+const express = require("express")
+const app = express();
+// 
+app.set("view engine","ejs");
 
-// app.set("view engine","ejs");
-// 
-// app.get("/", function(req,res){
-    // res.render("index");
-// })
-// 
-// app.get("/About", function(req,res){
-    // res.render("About");
-// })
-// 
-// app.get("/Courses",function(erq,res){
-    // res.render("Courses")
-// })
-// 
-// app.listen(3000);
+app.get("/", function(req,res){
+    res.render("index");
+})
+
+app.get("/About", function(req,res){
+    res.render("About");
+})
+
+app.get("/Courses",function(erq,res){
+    res.render("Courses")
+})
+
+app.listen(3000);
