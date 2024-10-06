@@ -179,13 +179,13 @@
 // app.get("/", function(req,res){
     // res.render("index");
 // })
-
-app.get("/About", function(req,res){
-    res.render("About");
-})
-
-app.get("/Courses",function(erq,res){
-    res.render("Courses")
-})
-
-app.listen(3000);
+// 
+// app.get("/About", function(req,res){
+    // res.render("About");
+// })
+// 
+// app.get("/Courses",function(erq,res){
+    // res.render("Courses")
+// })
+// 
+// app.listen(3000);
