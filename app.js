@@ -180,10 +180,11 @@ app.get("/", function(req,res){
     res.render("index");
 })
 
+
 app.get("/About", function(req,res){
     res.render("About",
-        {
-        name:Ankit,
+       {
+         name:"Ankit",
          age:20
          });
 })
