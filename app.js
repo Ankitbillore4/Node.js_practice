@@ -36,60 +36,60 @@
 
 //for read a file 
 // fs.readFile("hello.txt","utf-8",(err,data)=>{
-    // if(err) console.log(err);
-    // else console.log(data);
+// if(err) console.log(err);
+// else console.log(data);
 // })
 // 
 
 
 //for delete a file 
 // fs.unlink("hello.txt",(err)=>{
-    // if(err) console.log(err);
-    // else console.log("File Deleted");
+// if(err) console.log(err);
+// else console.log("File Deleted");
 // })
 // 
 // 
 
 //for delete a directory 
 // fs.rmdir("./copy",(err)=>{
-    // if(err) console.log(err);
-    // else console.log("Directory Deleted");
+// if(err) console.log(err);
+// else console.log("Directory Deleted");
 // })
 
 
 //for create a directory 
 // fs.mkdir("./new folder",(err)=>{
-    // if(err) console.log(err);
-    // else console.log("Directory Created");
+// if(err) console.log(err);
+// else console.log("Directory Created");
 // })
 
 
 //for read a directory 
 // fs.readdir("./new folder",(err,data)=>{
-    // if(err) console.log(err);
-    // else console.log(data); 
+// if(err) console.log(err);
+// else console.log(data); 
 // })
 
 
 // fs.unlink("hello.txt",(err)=>{
-    // if(err) console.log(err);
-    // else console.log("File Deleted");
+// if(err) console.log(err);
+// else console.log("File Deleted");
 // })
 // 
 // 
 // fs.unlink("./new folder/index.html",(err)=>{
-    // if(err) console.log(err);
-    // else console.log("File Deleted");
+// if(err) console.log(err);
+// else console.log("File Deleted");
 // })
 
 // fs.writeFile("./new folder/style.css","heloo Gyus",(err)=>{
-    // if(err) console.log(err);
-    // else console.log("File Created");
+// if(err) console.log(err);
+// else console.log("File Created");
 // })
 // 
 // fs.unlink("./new folder/style.css",(err)=>{
-    // if(err) console.log(err);
-    // else console.log("File Deleted");
+// if(err) console.log(err);
+// else console.log("File Deleted");
 // })  
 // 
 
@@ -124,44 +124,44 @@
 // const http = require('http');
 // server creating
 // const server = http.createServer((req,res)=>{
-    // res.end("Hello Ankit Billore");
+// res.end("Hello Ankit Billore");
 // })
 // 
 // server.listen(3000,(err)=>{
-    // if(err){
-        // console.log(err);
-    // }else{
-        // console.log("Server is running on port 3000");
-    // }
+// if(err){
+// console.log(err);
+// }else{
+// console.log("Server is running on port 3000");
+// }
 // })
 // 
 // 
 // const http= require("http");
 // check url Based Server...
 // const server = http.createServer(function(req,res){
-    // if(req.url== "/" || req.url=="/Home"){
-        // res.end("hello server was created :");
-    // } else if (req.url=="/About"){
-        // res.end("Hello about Page Was Open :")
-    // } else if (req.url=="/Contact"){
-        // res.end("Hello Contact Page Was open :")
-    // } else if(req.url=="/Course"){
-        // res.end("hello Course Page Was Open :")
-    // }
-    //   else{
-        // res.end("404 Page Not Found ....")
-    // }
+// if(req.url== "/" || req.url=="/Home"){
+// res.end("hello server was created :");
+// } else if (req.url=="/About"){
+// res.end("Hello about Page Was Open :")
+// } else if (req.url=="/Contact"){
+// res.end("Hello Contact Page Was open :")
+// } else if(req.url=="/Course"){
+// res.end("hello Course Page Was Open :")
+// }
+//   else{
+// res.end("404 Page Not Found ....")
+// }
 // })
 // server.listen(3000,function(err){
-    // if (err) console.log(err);
-    // else console.log("Creating Server....");
+// if (err) console.log(err);
+// else console.log("Creating Server....");
 // })
- // Server Creating Ended......
+// Server Creating Ended......
 
 
 
- //npm :.........
- // requiring cat-me pakage from npm for random cat..... 
+//npm :.........
+// requiring cat-me pakage from npm for random cat..... 
 
 //  const cat = require("cat-me")
 //  console.log(cat())
@@ -174,22 +174,22 @@
 const express = require("express")
 const app = express();
 
-app.set("view engine","ejs");
+app.set("view engine", "ejs");
 
-app.get("/", function(req,res){
+app.get("/", function (req, res) {
     res.render("index");
 })
 
 
-app.get("/About", function(req,res){
+app.get("/About", function (req, res) {
     res.render("About",
         {
-         name:"Ankit",
-         age:20
-         });
+            name: "Ankit",
+            age: 20
+        });
 })
 
-app.get("/Courses",function(erq,res){
+app.get("/Courses", function (erq, res) {
     res.render("Courses")
 })
 
