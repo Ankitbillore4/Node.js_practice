@@ -160,7 +160,7 @@
 
 
 
-//npm :.........
+//npm :.................................................................................
 // requiring cat-me pakage from npm for random cat..... 
 
 //  const cat = require("cat-me")
@@ -173,6 +173,8 @@
 
 
 // Express : nodemon using :
+//..................................................................................
+
 // const express = require("express")
 // const app = express();
 // 
@@ -191,10 +193,21 @@
         // });
 // })
 // 
-// app.get("/Courses", function (erq, res) {
+// app.get("/Courses", function (req, res) {
     // res.render("Courses")
 // })
 // 
 // app.listen(3000);
 
 
+const express = require("express");
+const app = express();
+
+app.set("view engine", "ejs");
+
+app.get("/contact/:username",function(req,res){
+    res.send(`${req.params.username}`)
+})
+
+
+app.listen(3000);
