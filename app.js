@@ -183,7 +183,7 @@ app.get("/", function(req,res){
 
 app.get("/About", function(req,res){
     res.render("About",
-       {
+        {
          name:"Ankit",
          age:20
          });
