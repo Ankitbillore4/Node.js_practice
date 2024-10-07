@@ -173,7 +173,7 @@
 // Express : nodemon using :
 const express = require("express")
 const app = express();
- 
+
 app.set("view engine","ejs");
 
 app.get("/", function(req,res){
@@ -181,7 +181,11 @@ app.get("/", function(req,res){
 })
 
 app.get("/About", function(req,res){
-    res.render("About");
+    res.render("About",
+        {
+        name:Ankit,
+         age:20
+         });
 })
 
 app.get("/Courses",function(erq,res){
