@@ -199,15 +199,25 @@
 // 
 // app.listen(3000);
 
+ 
+// const express = require("express");
+// const app = express();
+// 
+// app.set("view engine", "ejs");
+// 
+// app.get("/contact/:username",function(req,res){
+    // res.send(`${req.params.username}`)
+// })
+// 
+// 
+// app.listen(3000);
 
 const express = require("express");
 const app = express();
 
 app.set("view engine", "ejs");
-
-app.get("/contact/:username",function(req,res){
-    res.send(`${req.params.username}`)
+app.get("/contact/:id",function(req,res){
+    res.render(`${req.params.id} is your id :`)
 })
-
 
 app.listen(3000);
