@@ -217,7 +217,7 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.get("/contact/:id",function(req,res){
-  res.render("contact");
+  res.render("contact",{name:"Ankit Billore ", age:20, pata:"Bhopal"});
 })
 
 app.listen(3000);
