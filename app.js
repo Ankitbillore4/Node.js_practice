@@ -217,7 +217,7 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.get("/contact/:id",function(req,res){
-    res.render("contact",`${req.params.id} is your id `)
+  res.render("contact");
 })
 
 app.listen(3000);
