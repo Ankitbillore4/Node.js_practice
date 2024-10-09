@@ -227,8 +227,10 @@ const express = require("express");
 const app = express();
 
 app.set("view engine","ejs");
+
 app.get("/random",function(req,res){
-    res.send("random",[
+    res.render("random", 
+        data =[
         {name:"ankit billore", age:20, add: "bhopal"},
         {name:"rahul sharma", age:25, add: "delhi"},
         {name:"priya patel", age:22, add: "mumbai"},
