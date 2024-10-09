@@ -212,12 +212,29 @@
 // 
 // app.listen(3000);
 
+// const express = require("express");
+// const app = express();
+// 
+// app.set("view engine", "ejs");
+// app.get("/contact/:id",function(req,res){
+//   res.render("contact",{name :"ankit billore", age:20 , pata:"bhopal"});
+// })
+// 
+// app.listen(3000);
+
+
 const express = require("express");
 const app = express();
 
-app.set("view engine", "ejs");
-app.get("/contact/:id",function(req,res){
-  res.render("contact",{name :"ankit billore", age:20 , pata:"bhopal"});
+app.set("view engine","ejs");
+app.get("/random",function(req,res){
+    res.send("random",[
+        {name:"ankit billore", age:20, add: "bhopal"},
+        {name:"rahul sharma", age:25, add: "delhi"},
+        {name:"priya patel", age:22, add: "mumbai"},
+        {name:"amit singh", age:28, add: "bangalore"},
+        {name:"neha gupta", age:23, add: "pune"}
+]);
 })
 
 app.listen(3000);
