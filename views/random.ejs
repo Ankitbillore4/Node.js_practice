@@ -6,7 +6,9 @@
     <title>random</title>
 </head>
 <body>
-    <h1>helooo</h1>
+    <% data.forEach(function(person) { %>
+        <h1><%= person.name %></h1>
+    <% }); %>
     
 </body>
 </html>
